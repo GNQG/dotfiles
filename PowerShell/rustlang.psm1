@@ -489,3 +489,5 @@ Import-Module posh-cargo
             ForEach-Object { New-Object System.Management.Automation.CompletionResult $_, $_, 'ParameterValue', $_ }
     }
 }
+
+Export-ModuleMember TabExpansion

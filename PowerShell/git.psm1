@@ -3,6 +3,9 @@ Import-Module posh-git
 $git_orig = (Get-Command git)
 $hub_orig = (Get-Command hub)
 
+Set-Alias git-orig $git_orig
+Set-Alias hub-orig $hub_orig
+
 function git {
     $hubflag = $false
     $index = 0
@@ -36,3 +39,5 @@ function git {
         & $git_orig $Args
     }
 }
+
+Export-ModuleMember -Function git -Alias git-orig,hub-orig
