@@ -1,11 +1,5 @@
 if ($host.Name -cne 'Windows PowerShell ISE Host') {
-    #Import-Module PSColor
-    if (Get-Module -ListAvailable -Name DirColors) {
-        Import-Module DirColors
-    } else {
-        Install-Module DirColors -Scope CurrentUser
-        Import-Module DirColors
-    }
+    Import-Module DirColors
     Import-Module PSReadLine
     Import-Module oh-my-posh
 
