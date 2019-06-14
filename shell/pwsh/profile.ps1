@@ -1,7 +1,5 @@
-$LocalPSScriptRoot = (Get-Item (Get-Item $PROFILE.CurrentUserAllHosts).Target).DirectoryName
+. $PSScriptRoot\git.ps1
+. $PSScriptRoot\chocolatey.ps1
+. $PSScriptRoot\rustlang.ps1
 
-Import-Module "$LocalPSScriptRoot\git.psm1"
-Import-Module "$LocalPSScriptRoot\chocolatey.psm1"
-Import-Module "$LocalPSScriptRoot\rustlang.psm1"
-
-Import-Module "$LocalPSScriptRoot\ui.psm1"
+. $PSScriptRoot\ui.ps1
