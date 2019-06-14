@@ -1,10 +1,4 @@
-if [ -n "$DOTPATH" ]; then
-    _SPATH=$DOTPATH/config/sh
-else
-    _SPATH=$HOME
-fi
-
-export ENV=$_SPATH/.shrc
+export ENV=$DOTPATH/config/sh/shrc.sh
 export PIPENV_VENV_IN_PROJECT=1
 
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [ -n "$SSH_CONNECTION" ]; then
@@ -21,8 +15,6 @@ fi
 case "$-" in
     *i*)
         if ( [ -z "$BASH_VERSION" ] || [ "${BASH##*/}" != "bash" ] ) && [ -z "$ZSH_VERSION" ]; then
-            . $_SPATH/.shrc
+            . $DOTPATH/config/sh/shrc.sh
         fi ;;
 esac
-
-unset _SPATH

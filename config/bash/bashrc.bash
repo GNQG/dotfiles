@@ -9,15 +9,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-if [ -n "$DOTPATH" ]; then
-    . $DOTPATH/config/sh/shrc.sh
-else
-    . $HOME/.shrc
-fi
+. $DOTPATH/config/sh/shrc.sh
 
 _SEP=""
-#_PS1_1='\[\e[1;37;44m\] \u\[\e[0;44m\]@\h'$_OS_SYMBOL' \[\e[0m\]' # _OS_SYMBOL : defined on .shrc
-_PS1_1='\[\e[1;37;44m\] \u@\h'$_OS_SYMBOL'  '$CURRENT_SHELL' \[\e[0m\]' # _OS_SYMBOL, CURRENT_SHELL : defined on .shrc
+_PS1_1='\[\e[1;37;44m\] \u@\h'$_OS_SYMBOL'  '$CURRENT_SHELL' \[\e[0m\]' # _OS_SYMBOL, CURRENT_SHELL : shrc.sh
 _PS1_SEP1='\[\e[34;46m\]'$_SEP'\[\e[0m\]'
 _PS1_2='\[\e[1;37;46m\] \w \[\e[0m\]'
 _PS1_SEP2='\[\e[36m\]'$_SEP'\[\e[0m\]'

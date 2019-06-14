@@ -15,13 +15,7 @@ fi
 
 # ----- End of shell constants ----- #
 
-
-if [ -n "$DOTPATH" ]; then
-    command -v dircolors > /dev/null && eval $(dircolors $DOTPATH/.dir_colors/dircolors.ansi-dark)
-else
-    command -v dircolors > /dev/null && eval $(dircolors $HOME/.dir_colors/dircolors.ansi-dark)
-fi
-
+command -v dircolors > /dev/null && eval $(dircolors $DOTPATH/.dir_colors/dircolors.ansi-dark)
 
 # ----- PS1 ----- #
 
