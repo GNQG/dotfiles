@@ -15,7 +15,7 @@ fi
 
 # ----- End of shell constants ----- #
 
-command -v dircolors > /dev/null && eval $(dircolors $DOTPATH/.dir_colors/dircolors.ansi-dark)
+command -v dircolors > /dev/null && eval $(dircolors $DOTPATH/config/dircolors/dircolors.ansi-dark)
 
 # ----- PS1 ----- #
 
