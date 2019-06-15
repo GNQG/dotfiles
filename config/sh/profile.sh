@@ -1,3 +1,7 @@
+export XDG_CONFIG_HOME=$DOTPATH/config
+export XDG_CACHE_HOME=$DOTPATH/cache
+export XDG_DATA_HOME=$DOTPATH/data
+
 export ENV=$DOTPATH/config/sh/shrc.sh
 export PIPENV_VENV_IN_PROJECT=1
 
