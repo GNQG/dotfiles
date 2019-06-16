@@ -6,7 +6,7 @@ esac
 
 # ----- shell constants -----#
 
-command -v basename readlink > /dev/null && CURRENT_SHELL=$(basename $(readlink /proc/$$/exe))
+CURRENT_SHELL=$(basename $(readlink /proc/$$/exe))
 
 # interactive dash does not add SHLVL value
 if [ "$CURRENT_SHELL" = "dash" ]; then
@@ -15,7 +15,7 @@ fi
 
 # ----- End of shell constants ----- #
 
-command -v dircolors > /dev/null && eval $(dircolors $DOTPATH/config/dircolors/dircolors.ansi-dark)
+eval $(dircolors $DOTPATH/config/dircolors/dircolors.ansi-dark)
 
 # ----- PS1 ----- #
 
