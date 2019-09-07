@@ -1,4 +1,4 @@
-$profile_core = "$Env:DOTPATH\config\pwsh\profile-core.ps1"
+$profile_core = "$Env:DOTPATH\shared\config\pwsh\profile-core.ps1"
 if (Test-Path $profile_core) {
 	. $profile_core
 }

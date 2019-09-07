@@ -1,10 +1,10 @@
-export XDG_CONFIG_HOME=$DOTPATH/config
+export XDG_CONFIG_HOME=$DOTPATH/shared/config
 export XDG_CACHE_HOME=$DOTPATH/cache
 export XDG_DATA_HOME=$DOTPATH/data
 
-export ENV=$DOTPATH/config/sh/shrc.sh
+export ENV=$DOTPATH/shared/config/sh/shrc.sh
 export PIPENV_VENV_IN_PROJECT=1
-export INPUTRC=$DOTPATH/config/readline/inputrc
+export INPUTRC=$DOTPATH/shared/config/readline/inputrc
 
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [ -n "$SSH_CONNECTION" ]; then
     SSHLEVEL=$(($SSHLEVEL+1))
@@ -20,6 +20,6 @@ fi
 case "$-" in
     *i*)
         if ( [ -z "$BASH_VERSION" ] || [ "${BASH##*/}" != "bash" ] ) && [ -z "$ZSH_VERSION" ]; then
-            . $DOTPATH/config/sh/shrc.sh
+            . $DOTPATH/shared/config/sh/shrc.sh
         fi ;;
 esac

@@ -1,2 +1,2 @@
-. $DOTPATH/config/sh/profile.sh
-. $DOTPATH/config/bash/bashrc.bash
+. $DOTPATH/shared/config/sh/profile.sh
+. $DOTPATH/shared/config/bash/bashrc.bash

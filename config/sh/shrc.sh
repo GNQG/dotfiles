@@ -15,13 +15,16 @@ fi
 
 # ----- End of shell constants ----- #
 
-eval $(dircolors $DOTPATH/config/dircolors/dircolors.ansi-dark)
+eval $(dircolors $DOTPATH/shared/config/dircolors/dircolors.ansi-dark)
 
 # ----- PS1 ----- #
 
 case "$OS" in
     Windows* )
-        _OS_SYMBOL="" ;;
+        _OS_SYMBOL=""
+        if [ -n "$MSYSTEM" ]; then
+            _OS_SYMBOL="$_OS_SYMBOL[$MSYSTEM]"
+        fi ;;
     * )
         case "$OSTYPE" in
             linux*)     _OS_SYMBOL="" ;;

@@ -9,7 +9,7 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-. $DOTPATH/config/sh/shrc.sh
+. $DOTPATH/shared/config/sh/shrc.sh
 
 _SEP=""
 _PS1_1='\[\e[1;37;44m\] \u@\h'$_OS_SYMBOL'  '$CURRENT_SHELL' \[\e[0m\]' # _OS_SYMBOL, CURRENT_SHELL : shrc.sh
