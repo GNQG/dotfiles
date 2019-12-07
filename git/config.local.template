@@ -1,0 +1,2 @@
+[include]
+    path = ../../../shared/git/config

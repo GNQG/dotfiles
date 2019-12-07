@@ -4,7 +4,7 @@ if ($host.Name -cne 'Windows PowerShell ISE Host') {
     Import-Module oh-my-posh
 
     Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-    Update-Dircolors $Env:DOTPATH\shared\config\dircolors\dircolors.ansi-dark
+    Update-Dircolors $Env:DOTPATH\shared\dircolors\dircolors.ansi-dark
     $ThemeSettings.MyThemesLocation = "$PSScriptRoot\Themes"
     Set-Theme MyTheme
 }

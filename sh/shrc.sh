@@ -15,7 +15,7 @@ fi
 
 # ----- End of shell constants ----- #
 
-eval $(dircolors $DOTPATH/shared/config/dircolors/dircolors.ansi-dark)
+eval $(dircolors $DOTPATH/shared/dircolors/dircolors.ansi-dark)
 
 # ----- PS1 ----- #
 
