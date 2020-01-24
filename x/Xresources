@@ -1,0 +1,59 @@
+#define BASE_FONT_CONFIG size=13:antialias=true:hinting=true:hintstyle=hintfull
+
+! size
+*geometry: 100x28
+*saveLines: 3000
+
+! scroll bar
+URxvt.scrollBar_right:      true
+URxvt.scrollBar_floating:   true
+URxvt.scrollstyle:          plain
+
+! cursor
+URxvt.cursorBlink:          true
+
+! key
+URxvt.metaSendsEscape: true 
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Control-Up:     \033[1;5A
+URxvt.keysym.Control-Down:   \033[1;5B
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C
+
+! font
+URxvt.font:           xft:Cica:style=Regular:BASE_FONT_CONFIG, \
+                      xft:Hack NF:style=Regular:BASE_FONT_CONFIG
+URxvt.boldFont:       xft:Cica:style=Bold:BASE_FONT_CONFIG, \
+                      xft:Hack NF:style=Bold:BASE_FONT_CONFIG
+URxvt.italicFont:     xft:Cica:style=Italic:BASE_FONT_CONFIG, \
+                      xft:Hack NF:style=Italic:BASE_FONT_CONFIG
+URxvt.boldItalicFont: xft:Cica:style=Bold Italic:BASE_FONT_CONFIG, \
+                      xft:Hack NF:style=Bold Italic:BASE_FONT_CONFIG
+
+! im
+URxvt.inputMethod: fcitx
+URxvt.preeditType: OnTheSpot
+
+! color
+*background: #292b2e
+*foreground: #c4c4c4
+*color0:  #292b2e
+*color1:  #e0211d
+*color2:  #86dc2f
+*color3:  #dc752f
+*color4:  #2b8dae
+*color5:  #bc6ec5
+*color6:  #24795e
+*color7:  #c4c4c4
+*color8:  #a45bad
+*color9:  #f22520
+*color10: #67b11d
+*color11: #b1951d
+*color12: #4f97d7
+*color13: #ce537a
+*color14: #28def0
+*color15: #eeeeee
+
+! extensions
+URxvt.perl-ext-common: cursor_ibeam,xim-onthespot
