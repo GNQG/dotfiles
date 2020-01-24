@@ -5,6 +5,7 @@ export XDG_DATA_HOME=$DOTPATH/local/data
 export ENV=$DOTPATH/shared/sh/shrc.sh
 export PIPENV_VENV_IN_PROJECT=1
 export INPUTRC=$DOTPATH/shared/readline/inputrc
+export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 
 [ -d "$HOME/.local/bin" ] && export PATH=$HOME/.local/bin:$PATH
 [ -d "$HOME/bin" ] && export PATH=$HOME/bin:$PATH
