@@ -68,3 +68,5 @@ alias xa='exa -F --color=auto --color-scale --time-style=long-iso'
 alias xal='xa -l'
 alias xaa='xa -a'
 alias xat='xa -T'
+
+alias tmux="tmux -f $DOTPATH/shared/tmux/tmux.conf"
