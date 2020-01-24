@@ -60,6 +60,6 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-alias ls='ls -F --color=auto'
+alias ls='ls -F --color=auto --time-style=long-iso'
 alias ll='ls -l'
 alias la='ls -a'
