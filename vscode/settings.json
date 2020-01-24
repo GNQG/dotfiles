@@ -1,0 +1,105 @@
+{
+    "editor.fontFamily": "Cica",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "storage.type",
+                    "support.type",
+                    "support.class"
+                ],
+                "settings": {
+                    "fontStyle": "",
+                    "foreground": "#ce537a"
+                }
+            },
+        ]
+    },
+    "editor.suggestSelection": "first",
+    "files.autoGuessEncoding": true,
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.olean": true
+    },
+    "extensions.autoUpdate": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Spacemacs - dark",
+    "workbench.colorCustomizations": {
+        "terminal.ansiBlack": "#292b2e",
+        "terminal.ansiBlue": "#2b8dae",
+        "terminal.ansiGreen": "#86dc2f",
+        "terminal.ansiCyan": "#24795e",
+        "terminal.ansiRed": "#e0211d",
+        "terminal.ansiMagenta": "#bc6ec5",
+        "terminal.ansiYellow": "#dc752f",
+        "terminal.ansiWhite": "#c4c4c4",
+        "terminal.ansiBrightBlack": "#a45bad",
+        "terminal.ansiBrightBlue": "#4f97d7",
+        "terminal.ansiBrightGreen": "#67b11d",
+        "terminal.ansiBrightCyan": "#28def0",
+        "terminal.ansiBrightRed": "#f22520",
+        "terminal.ansiBrightMagenta": "#ce537a",
+        "terminal.ansiBrightYellow": "#b1951d",
+        "terminal.ansiBrightWhite": "#eeeeee"
+    },
+    "terminal.integrated.fontFamily": "Cica",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "rust-client.channel": "stable",
+    "markdown.preview.fontSize": 18,
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "latexmk",
+            "args": [
+                "-lualatex",
+                "-synctex=1",
+                "%DOC%.tex"
+            ]
+        },
+        {
+            "command": "latexmk",
+            "args": [
+                "-c"
+            ]
+        }
+    ],
+    "files.associations": {
+        ".shrc": "shellscript"
+    },
+    "powershell.codeFormatting.newLineAfterCloseBrace": false,
+    /*
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+     */
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.rendererType": "dom",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "docker.containers.label": "ImageId",
+    "python.jediEnabled": false,
+    /* 
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+     */
+}
