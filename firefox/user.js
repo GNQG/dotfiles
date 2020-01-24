@@ -1,0 +1,36 @@
+user_pref("browser.ctrlTab.recentlyUsedOrder", false);
+user_pref("browser.discovery.enabled", false);
+user_pref("browser.formfill.enable", false);
+user_pref("browser.uidensity", 1);
+user_pref("browser.backspace_action", 0);
+user_pref("browser.tabs.loadBookmarksInTabs", true);
+user_pref("browser.tabs.loadInBackground", false);
+user_pref("browser.tabs.drawInTitlebar", true);
+user_pref("browser.urlbar.doubleClickSelectsAll", false);
+user_pref("browser.urlbar.clickSelectsAll", true);
+user_pref("browser.urlbar.searchSuggestionsChoice", false);
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.link.open_newwindow.restriction", 3);
+user_pref("general.smoothScroll.msdPhysics.enabled", true);
+user_pref("dom.event.contextmenu.enabled", true);
+user_pref("ui.context_menus.after_mouseup", true);
+
+user_pref("network.cookie.lifetimePolicy", 2);
+user_pref("network.dns.disablePrefetch", true);
+user_pref("network.http.speculative-parallel-limit", 0);
+user_pref("network.predictor.enabled", false);
+user_pref("network.prefetch-next", false);
+
+user_pref("places.history.enabled", false);
+user_pref("privacy.clearOnShutdown.cookies", false);
+user_pref("privacy.clearOnShutdown.sessions", false);
+user_pref("privacy.cpd.cookies", false);
+user_pref("privacy.cpd.sessions", false);
+user_pref("privacy.history.custom", true);
+user_pref("signon.rememberSignons",	false);
+user_pref("privacy.sanitize.pending", "[{\"id\":\"shutdown\",\"itemsToClear\":[\"history\",\"formdata\",\"downloads\"],\"options\":{}},{\"id\":\"newtab-container\",\"itemsToClear\":[],\"options\":{}}]");
+user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("privacy.userContext.enabled", true);
+user_pref("privacy.userContext.extension", "cookie-manager@robwu.nl");
+user_pref("privacy.userContext.longPressBehavior", 2);
+user_pref("privacy.userContext.ui.enabled", true);
