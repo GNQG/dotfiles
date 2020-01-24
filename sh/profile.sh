@@ -6,6 +6,9 @@ export ENV=$DOTPATH/shared/sh/shrc.sh
 export PIPENV_VENV_IN_PROJECT=1
 export INPUTRC=$DOTPATH/shared/readline/inputrc
 
+[ -d "$HOME/.local/bin" ] && export PATH=$HOME/.local/bin:$PATH
+[ -d "$HOME/bin" ] && export PATH=$HOME/bin:$PATH
+
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || [ -n "$SSH_CONNECTION" ]; then
     SSHLEVEL=$(($SSHLEVEL+1))
 fi
