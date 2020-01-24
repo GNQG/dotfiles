@@ -1,0 +1,4 @@
+[Hotkey]
+TriggerKey=CTRL_SPACE ZENKAKUHANKAKU
+ActivateKey=HENKANMODE
+InactivateKey=MUHENKAN
