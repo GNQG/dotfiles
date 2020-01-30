@@ -19,6 +19,7 @@
         ]
     },
     "editor.suggestSelection": "first",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "files.autoGuessEncoding": true,
     "files.eol": "\n",
     "files.exclude": {
