@@ -8,6 +8,7 @@ export INPUTRC=$DOTPATH/shared/readline/inputrc
 export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass
 export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 export CARGO_HOME=$XDG_DATA_HOME/cargo

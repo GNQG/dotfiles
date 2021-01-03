@@ -7,7 +7,6 @@ eamodio.gitlens
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
 goessner.mdmath
-hiro-sun.vscode-emacs
 hnw.vscode-auto-open-markdown-preview
 James-Yu.latex-workshop
 Kelvin.vscode-sshfs

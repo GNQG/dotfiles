@@ -1,4 +1,5 @@
 {
     "locale": "ja",
-    "disable-color-correct-rendering": true
+	"disable-color-correct-rendering": true,
+	"enable-crash-reporter": false,
 }
