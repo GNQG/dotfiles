@@ -11,6 +11,8 @@ fi
 
 . $DOTPATH/shared/sh/shrc.sh
 
+export HISTCONTROL=ignoredups
+
 _SEP=""
 _PS1_1='\[\e[1;37;44m\] \u@\h'$_OS_SYMBOL'  '$CURRENT_SHELL' \[\e[0m\]' # _OS_SYMBOL, CURRENT_SHELL : shrc.sh
 _PS1_SEP1='\[\e[34;46m\]'$_SEP'\[\e[0m\]'
