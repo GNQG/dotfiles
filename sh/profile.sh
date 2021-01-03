@@ -9,6 +9,13 @@ export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass
 export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
 
+export RUSTUP_HOME=$XDG_DATA_HOME/rustup
+export CARGO_HOME=$XDG_DATA_HOME/cargo
+export PATH=$CARGO_HOME/bin:$PATH
+_SCCACHE=$(command -v sccache)
+[ -n "$_SCCACHE" ] && export RUSTC_WRAPPER=$_SCCACHE
+unset _SCCACHE
+
 [ -d "$HOME/.local/bin" ] && export PATH=$HOME/.local/bin:$PATH
 [ -d "$HOME/bin" ] && export PATH=$HOME/bin:$PATH
 
