@@ -33,10 +33,6 @@ blocks:
           style: plain
           template: ' '
           type: root
-        - foreground: '#100e23'
-          style: plain
-          template: '  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} '
-          type: python
         - foreground: '#CB4B16'
           style: plain
           template: ' {{ if gt .Code 0 }} {{ .Meaning }}{{ else }}{{ end }} '

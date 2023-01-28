@@ -10,5 +10,9 @@ if ($host.Name -cne 'Windows PowerShell ISE Host') {
     Set-PSReadLineKeyHandler -Key Ctrl+d -Function DeleteChar
 
     Update-Dircolors $Env:DOTPATH\shared\dircolors\dircolors.ansi-dark
-    oh-my-posh init pwsh --config "$PSScriptRoot\Themes\MyTheme.yaml" | Invoke-Expression
+    if (Get-Command starship -ErrorAction Ignore) {
+        Invoke-Expression (starship init powershell --print-full-init | Out-String)
+    } elseif (Get-Command oh-my-posh -ErrorAction Ignore) {
+        oh-my-posh init pwsh --config "$PSScriptRoot\Themes\MyTheme.yaml" | Invoke-Expression
+    }
 }
