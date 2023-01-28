@@ -1,4 +1,4 @@
-#define BASE_FONT_CONFIG size=13:antialias=true:hinting=true:hintstyle=hintfull
+#define BASE_FONT_CONFIG size=11:antialias=true:hinting=true:hintstyle=hintfull
 
 ! size
 *geometry: 100x28

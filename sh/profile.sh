@@ -9,6 +9,12 @@ export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export PASSWORD_STORE_DIR=$XDG_CONFIG_HOME/pass
 export VSCODE_PORTABLE=$XDG_DATA_HOME/vscode
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export FrameworkPathOverride=/lib/mono/4.8-api
+
+export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
+
+export PNPM_HOME="$XDG_DATA_HOME/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 export RUSTUP_HOME=$XDG_DATA_HOME/rustup
 export CARGO_HOME=$XDG_DATA_HOME/cargo

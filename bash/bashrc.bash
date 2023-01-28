@@ -22,3 +22,5 @@ _PS1_SEP2='\[\e[36m\]'$_SEP'\[\e[0m\]'
 PS1="${_PS1_1}${_PS1_SEP1}${_PS1_2}${_PS1_SEP2}\n"'\[\e[1m\]$ \[\e[0m\]'
 
 unset _OS_SYMBOL _SEP _PS1_1 _PS1_2 _PS1_SEP1 _PS1_SEP2
+
+command -v starship &> /dev/null && eval "$(starship init bash)"
