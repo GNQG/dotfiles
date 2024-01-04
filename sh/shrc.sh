@@ -64,7 +64,7 @@ alias ls='ls -F --color=auto --time-style=long-iso'
 alias ll='ls -l'
 alias la='ls -a'
 
-alias xa='exa -F --color=auto --color-scale --time-style=long-iso'
+alias xa='exa -F --color=auto --time-style=long-iso'
 alias xal='xa -l'
 alias xaa='xa -a'
 alias xat='xa -T'
