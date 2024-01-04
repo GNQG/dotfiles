@@ -4,7 +4,7 @@ export XMODIFIER="@im=fcitx"
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export DefaultIMModule=fcitx
-setxkbmap -option "ctrl:swapcaps" -option "caps:ctrl_modifier"
+# setxkbmap -option "ctrl:swapcaps" -option "caps:ctrl_modifier"
 #setxkbmap -print | xkbcomp -w 0 -xkb - - \
 #  | sed 's/key\s*<LCTL>\s*[{]\s*\[\s*Control_L\s*\]/key <LCTL> { [ Eisu_toggle, Caps_Lock ]/g' \
 #  | sed 's/key\s*<CAPS>\s*[{]\s*\[\s*Eisu_toggle,\s*Caps_Lock\s*\]/key <CAPS> { [ Control_L ]/g' \
