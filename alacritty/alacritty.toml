@@ -1,0 +1,48 @@
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+blinking = "Always"
+shape = "Beam"
+
+[font]
+size = 10
+
+[font.bold]
+family = "HackGenNerd Console"
+style = "Bold"
+
+[font.italic]
+family = "HackGenNerd Console"
+style = "Italic"
+
+[font.normal]
+family = "HackGenNerd Console"
+style = "Regular"
+
+[colors.primary]
+# spacemacs dark
+background = "0x292b2e"
+foreground = "0xcbc1d5"
+
+[colors.normal]
+# baskerville - ivory dark
+black = "0x5b5955"
+blue = "0x6a8dca"
+cyan = "0x019baa"
+green = "0x559a6a"
+magenta = "0xb577ac"
+red = "0xc4756e"
+white = "0xdbdde2"
+yellow = "0x9b8a4b"
+
+[colors.bright]
+# baskerville - ivory dark
+black = "0x707277"
+blue = "0x98bbfb"
+cyan = "0x53cad9"
+green = "0x82c896"
+magenta = "0xe5a4db"
+red = "0xf6a299"
+white = "0xf7f9ff"
+yellow = "0xcab775"
